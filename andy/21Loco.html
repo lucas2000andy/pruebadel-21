@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta nombre1="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilo.css">
+    <title>El famoso juego 21 BLACKJACK</title>
+</head>
+
+<style>
+  
+    #eljuego {
+
+
+        display: none;
+    }
+</style>
+
+<body>
+    <div class="inicioprincipal">
+
+    <div id="usuariod">
+
+        Bienvenidos ami juego les invito  a que ingresen su Nombre: hola
+        
+        <input type="text" id="jugadorNombre">
+
+        <button onclick="iniciarr()">COMENZAR A JUGAR</button>
+
+            
+        
+    </div>
+    <div id="eljuego">
+        <center>
+            <h1>Bienvenido comienza yaaaaa!!!</h1>
+
+            <br><br>
+            <img src="blancacarta.gif" alt="">
+
+            <img src="cartica.jpg" width="300px" alt="" id="cartaJugada">
+            <br><br>
+
+            <button onclick="pedirCar()">Pedir</button>
+            <br>
+
+            <button onclick="validate()">Validar</button>
+
+            <br><br>
+            <label for="" id="nombre1"></label>
+
+            <br>
+            <label for="" id="sumaTot"></label>
+            <br>
+
+          <!-- <div id='elUsuario' class="player"></div>-->  
+        </center>
+    </div>
+
+
+  
+</div>
+</body>
+<script src="21ja.js"></script>
+<script>
+    function iniciarr() {
+        
+        document.getElementById("usuariod").style = "display:none";
+
+        document.getElementById("eljuego").style = "display:block";
+
+        pajaro.nombre = document.getElementById("jugadorNombre").value;
+
+        document.getElementById("nombre1").innerHTML = pajaro.nombre;
+
+        andyJ.crearMazo()
+
+        andyJ.mezclar()
+
+            
+    }
+// la funcion  pedir carta 
+    function pedirCar() {
+
+        let unica = andyJ.mazo.shift();
+
+        console.log(unica);
+
+        pajaro.pedir(unica);
+    
+    }
+    
+
+    function validate() {
+
+        andyJ.validar(pajaro.mazoValores);
+    }
+
+</script>
+
+
+</html>

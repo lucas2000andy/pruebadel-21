@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+body{
+   background-image: url("cartica.jpg");
+    padding: 100px;
+    
+}
+
+.inicioprincipal{
+    width: 40%;
+   
+    padding: 90px;
+    background: #11d8d8;
+    color: rgb(13, 0, 128);
+    
+    
+   
+}
+
+button{
+    width: 60%;
+    height: 40px;
+    margin-top: 60px;
+    color: white;
+    border: 0px;
+    background: linear-gradient(90deg,#BF4222,#E30F87);
+    font-weight: 300;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#vista1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    color: rgba(41, 15, 155, 0.815);
+    font-size:2em;
+}
+
+p{
+    color: indigo;
+    font-size:2em;
+}
+
+#result{
+    color: rgb(130, 0, 0);
+    font-size:4em;
+}
